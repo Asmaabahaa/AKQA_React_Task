@@ -1,0 +1,74 @@
+@use "./variables" as *;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column_2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+/* Create Three equal columns that floats next to each other */
+.column_4 {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.column_8 {
+  width: 66.666667%
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.custom_font_style{
+  font-style: $font-italic;
+  font-weight: $font-weight;
+}
+
+.flex{
+  display: flex;
+}
+.float_right{
+  float: right;
+}
+
+// Home Page Content
+#soon{
+  min-height: 300px;
+  background-color: $color-grey;
+  text-align: center;
+  padding: 100px 0;
+}
+
+@media screen and (max-width: 900px) {
+  .column_2, 
+  .column_4, 
+  .column_8{
+     width: 100%;
+    }
+        .column_2{
+        img{
+            width: 100%;
+        }
+    }
+  
+  }

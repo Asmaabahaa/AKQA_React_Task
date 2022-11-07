@@ -1,0 +1,301 @@
+@use "../styles/variables" as *;
+
+.section_title {
+    color: $color-blue;
+    font-size: $default-font-size;
+}
+
+.section_1 {
+    .img_container {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .logo_text {
+            color: #fff;
+            position: absolute;
+            left: 105px;
+            top: 25%;
+        }
+
+        .summary_p {
+            position: absolute;
+            width: 445px;
+            height: 175px;
+            left: 100px;
+            top: 200px;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 130%;
+            letter-spacing: 2.5px;
+            color: #fff;
+        }
+    }
+}
+
+
+.section_2 {
+    background-color: $color-grey;
+
+    img {
+        margin: auto;
+        display: block;
+    }
+
+    .product_description {
+
+        .product_info {
+            color: $color-blue;
+            font-size: $small-font-size;
+            padding: 50px 0;
+            width: 50%;
+        }
+
+        .learn_more {
+            font-style: $font-italic;
+            font-weight: $font-weight;
+            color: $color-black;
+            font-size: $small-font-size;
+        }
+
+    }
+}
+
+.section_3 {
+    height: 520px;
+
+    .card {
+        padding: 10px;
+        text-align: center;
+
+        .content_group {
+            max-width: 50%;
+            margin: auto;
+
+            img {
+                height: 220px;
+            }
+
+            .card_title {
+                color: $color-blue;
+            }
+
+            .card_description {
+                font-size: 15px;
+                line-height: 150%;
+                color: $color-black;
+                min-height: 50px;
+            }
+
+            small {
+                a {
+                    color: $color-pink;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}
+
+.section_4 {
+    background-color: $color-grey;
+    padding: 5%;
+
+    .title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 120%;
+        letter-spacing: 0.5px;
+        color: $color-blue;
+    }
+
+    .specificality_p {
+        color: $color-black;
+        height: 330px;
+
+        .dash_list {
+            list-style-type: "— ";
+        }
+    }
+
+    button {
+        width: 200px;
+        height: 50px;
+        background: $color-pink;
+        border-color: $color-pink;
+        border-radius: 100px;
+        color: $color-white;
+        display: block;
+    }
+}
+
+.section_5 {
+    padding: 10%;
+
+    h1 {
+        color: $color-blue;
+    }
+
+    .card_2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        background-color: $color-grey;
+
+        span {
+            color: $color-blue;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            padding: 5%;
+        }
+
+        .clinical_tools_title {
+            font-size: $default-font-size;
+            letter-spacing: 0.5px;
+        }
+
+        small {
+            color: $color-pink;
+        }
+    }
+
+}
+
+.section_6 {
+    background-color: $color-grey;
+    padding: 5%;
+
+    .video_card {
+        .video_group {
+            background-color: $color-white;
+            img{
+                width: 100%;
+            }
+        }
+
+        .play_icon {
+            color: $color-pink;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .video-group iframe {
+            position: relative;
+            z-index: -1;
+        }
+
+        .video_decription_group {
+            .video_title {
+                color: $color-blue;
+            }
+        }
+    }
+}
+
+.section_7 {
+    .accordion {
+        cursor: pointer !important;
+        margin-left: 20px;
+
+        img {
+            width: 40px;
+        }
+
+        p {
+            margin: 15px;
+        }
+    }
+
+    .content {
+        transition: all 0.3s ease-in-out;
+
+        .refrences_info {
+            margin-left: 20px;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .section_title {
+        font-size: $small-font-size;
+    }
+
+    .section_1 {
+        .img_container {
+            .logo_text {
+                left: 15px;
+                top: 10px;
+            }
+
+            .summary_p {
+                display: none;
+            }
+        }
+
+    }
+
+    .section_2 {
+        .product_description {
+            .product_info {
+                width: 100%;
+                padding: 0px;
+            }
+        }
+    }
+
+    .section_3 {
+        height: auto;
+
+        .card {
+            width: 100%;
+
+            .content_group {
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+    }
+
+    .section_4 {
+        .title {
+            font-size: 20px;
+        }
+
+        .specificality_p {
+            height: auto;
+        }
+    }
+
+    .section_5 {
+        .card_2 {
+            .clinical_tools_title {
+                font-size: $small-font-size;
+            }
+        }
+    }
+    .section_7 {
+        .content {   
+            .refrences_info {
+                padding: 20px;
+            }
+        }
+    }
+
+}
